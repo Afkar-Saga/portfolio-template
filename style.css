@@ -1,0 +1,70 @@
+.hero {
+    background-image: url("img/bg_laptop.jpg");
+    color: rgba(13, 13, 13, .85);
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+    height: 130vh;
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: currentColor;
+    z-index: 1;
+}
+
+@media (min-width: 576px) {
+    .hero {
+        min-height: 680px;
+    }
+}
+
+.hero .hero-content {
+    max-width: 640px;
+    color: #ccc;
+    z-index: 2;
+    padding: 40px 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
+}
+
+@media (min-width: 576px) {
+    .hero .text {
+        padding: 0;
+    }
+}
+
+section {
+    padding-top: 5em;
+}
+
+#about {
+    background-color: #b0aeac;
+}
+#about p {
+    text-align: justify;
+}
+
+#portfolio {
+    background-color: #201513;
+    min-height: 100vh;
+}
+
+#blog {
+    background-color: #b0aeac;
+    min-height: 100vh;
+}
+
+#contact {
+    background-color: #201513;
+    min-height: 100vh;
+}
